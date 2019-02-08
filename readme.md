@@ -17,6 +17,8 @@ This directory contains files you will need to test connectivity to two differen
 
 	- Expand folder "Anypoint Studio" and select "Packaged mule application (.jar)"
 
+	- Point to the `db_test.jar` to import it
+
 2.  Once the project is loaded,
 
 	- Expand `src/main/mule` folder and open `db_test.xml`.  This should open db_test in a tab.
@@ -27,14 +29,14 @@ This directory contains files you will need to test connectivity to two differen
 
 	- Click on "Test Connection" button to verify connectivity to MySQL database.
 
-	- If the connection fails, try the following "LOCAL" option
+	- If the connection fails (indicates either you are behind a proxy or using VPN). In such a case, try the following "LOCAL" option
 
 
 ### To test connectivity with **LOCAL Derby database**:
 
 1.  Start the local server using `mulesoft-training-services-1.6.2.jar` as directed above
 
-2.  After importing the db_test app into Studio (see steps above), from "Global Elements" tab, open "Global Property".  Replace the value "`REMOTE`" with "`LOCAL`".  Close the dialog box.
+2.  After importing the `db_test` Mule app into Studio (see steps above), use the "Global Elements" tab, and open "Global Property".  Replace the value `REMOTE` with `LOCAL`.  Close the dialog box.
 
 3.  From "Global Elements", double-click "Database_Config" to open it.
 
